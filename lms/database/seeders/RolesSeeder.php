@@ -15,6 +15,7 @@ class RolesSeeder extends Seeder
         DB::table('roles')->insert([
             ['roleName' => 'Administrator', 'created_at' => now(), 'updated_at' => now()],
             ['roleName' => 'Teacher', 'created_at' => now(), 'updated_at' => now()],
+            ['roleName' => 'Teacher Assistant', 'created_at' => now(), 'updated_at' => now()],
             ['roleName' => 'Student', 'created_at' => now(), 'updated_at' => now()]
         ]);
     }
