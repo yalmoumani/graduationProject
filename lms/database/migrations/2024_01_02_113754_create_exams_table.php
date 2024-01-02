@@ -18,6 +18,8 @@ return new class extends Migration
             $table->dateTime('startDate')->nullable();
             $table->dateTime('closingDate')->nullable();
             $table->integer('availableTime')->nullable();
+            $table->bigInteger('courseID')->unsigned()->nullable();
+            $table->foreign('courseID')->constrained('exams_courseID')->references('id')->on('courses')->onDelete('cascade');
         });
     }
 

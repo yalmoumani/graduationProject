@@ -11,4 +11,13 @@ class Courses extends Model
     protected $fillable = [
         "id","courseName","courseDescription",
     ];
+
+    public function id()
+    {
+        return $this->belongsTo(Exams::class);
+    }
+    public function students()
+    {
+        return $this->belongsToMany(User::class,'courseID','userID');
+    }
 }
