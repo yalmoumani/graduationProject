@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('exams', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->enum('examType', ['Midterm', 'Final']);
+            $table->dateTime('startDate')->nullable();
+            $table->dateTime('closingDate')->nullable();
+            $table->integer('availableTime')->nullable();
         });
     }
 

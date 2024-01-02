@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Exams extends Model
 {
     use HasFactory;
+    protected $fillable = ["examType", "startDate","closingDate","availableTime",
+        ];
 }
