@@ -1,0 +1,80 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bright-purple);
+  padding: 10px;
+  height: 1.5rem;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  overflow-x: auto; /* Add this line to enable horizontal scrolling when necessary */
+  white-space: nowrap; /* Add this line to prevent line breaks in the navigation items */
+}
+
+  .logo {
+    flex: 0 0 auto;
+  }
+  
+  .logo img {
+    height: 150px;
+  }
+  
+  .items {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .items ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .items li {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .items li:hover {
+    color: yellow;
+  }
+  
+  .right {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right a {
+    text-decoration: none;
+  }
+  
+  .right p {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .right p:hover {
+    color: yellow;
+  }
+  
+  .language {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  :root {
+    --blue: rgba(62, 15, 235, 1);
+    --bright-purple: rgba(78, 53, 171, 1);
+    --collection-1-color: rgba(255, 255, 255, 1);
+    --green: rgba(151, 140, 60, 1);
+    --yellow: rgba(235, 211, 13, 1);
+  }

@@ -1,0 +1,34 @@
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box; /* Add this line to include padding in the width calculation */
+    overflow: hidden; /* Add this line to hide any content that exceeds the footer's dimensions */
+    white-space: nowrap; /* Add this line to prevent line breaks in the footer content */
+  }
+  
+  
+  .contact, .terms {
+    margin: 10px;
+  }
+  
+  .contact span, .terms span {
+    display: block;
+  }
+  
+  .contact span:first-child, .terms span:first-child {
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+    }
+  }
