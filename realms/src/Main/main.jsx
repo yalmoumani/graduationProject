@@ -12,7 +12,7 @@ export const DesktopMainPage = () => {
         </div>
         <div class="previews">
           <div class="boxes">
-            <img src="" alt="" />
+            <img src="realms\src\Images\logos\realmsWhite.png" alt="" />
             <p></p>
             </div>
             </div>

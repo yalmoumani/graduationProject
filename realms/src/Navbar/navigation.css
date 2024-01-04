@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--bright-purple);
+  background-color: var(--sky);
   padding: 10px;
   height: 1.5rem;
   color: white;
@@ -42,7 +42,7 @@
   }
   
   .items li:hover {
-    color: yellow;
+    color: var(--sea);
   }
   
   .right {
@@ -63,7 +63,7 @@
   }
   
   .right p:hover {
-    color: yellow;
+    color: var(--sea);
   }
   
   .language {
@@ -72,9 +72,9 @@
   }
   
   :root {
-    --blue: rgba(62, 15, 235, 1);
-    --bright-purple: rgba(78, 53, 171, 1);
-    --collection-1-color: rgba(255, 255, 255, 1);
-    --green: rgba(151, 140, 60, 1);
-    --yellow: rgba(235, 211, 13, 1);
+    --purple: #8A66D9;
+    --grey: #BAC2D9;
+    --sea: #5C8EF2;
+    --grey-blue: #5EC8F2;
+    --sky: #8DE0F2;
   }

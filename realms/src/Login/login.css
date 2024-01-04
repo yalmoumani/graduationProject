@@ -1,56 +1,279 @@
-.login-container {
+/* Update the microsoft buttom, realign the logo, fix the checkbox, and figure out the size on text input,dropdown shadow and ellipses and add js */
+
+
+body{
+  background-color: #d2cdcd;
+}
+.login-container{
+  padding:5rem;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo img{
+  height: 250px;
+}
+.signin-container{
+  display: flex;
+  justify-content: center;
+}
+.login-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 500px;
+  width: 500px;
   justify-content: center;
-  height: 100vh;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
-
-.login-content {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
+.title{
+  font-size: 33px;
 }
 
 .form-group {
+  margin-top: 1.5rem;
+}
+.form-group input {
+  width: 335px;
+  height: 40px;
+  border-radius: 5px;  
+}
+.form-group input::placeholder {
+  color: rgb(114, 111, 108);
+  font-size: 20px;
+  padding-left: 15px;  
+}
+p{
+  margin-top: 3px;
+  color: rgb(85, 85, 194);
+}
+p:hover{
+  color: rgb(0, 0, 0);
+}
+a{
+  text-decoration: none;
+}
+
+
+.middle-container{
+  display: flex;
+  justify-content: space-between;
+}
+#signin{
+  color: white;
+  background-color: rgb(36, 95, 133);
+  border: hidden;
+  padding-bottom: 3px;
+  border-radius: 10px;
+  width: 140px;
+  font-size: 16px;
+  height: 40px;
+  }
+
+.form-check {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
+  accent-color: rgb(123, 123, 208);
 }
 
-label {
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"] {
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0069d9;
-}
-
-p {
+hr {
+  display: flex;
+  align-items: center;
   text-align: center;
+  width: 146px;
+}
+
+hr::before,
+hr::after {
+  content: "";
+  flex-grow: 1;
+  bottom: 1px solid #000;
+  margin: 0 10px;
+}
+
+.or-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.or-line {
+  flex-grow: 7;
+  border: 1px solid #000;
+  margin: 0 10px;
+}
+
+.or-text {
+  margin: 0 10px;
+}
+/* login button */
+
+#microsoft{
+  width: 280px;
+  height: 40px;
+  background: white;
+  font-size: 16px;
+}
+/* top right */
+#circle1 {
+  position: fixed;
+  top: -8rem;
+  right: 4rem;
+  background-color: rgb(36, 36, 102);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(5px);
+}
+
+#circle2 {
+  position: fixed;
+  top: 3rem;
+  right: 15rem;
+  background-color: rgb(114, 114, 190);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(5px);
+
+  /* Animation properties */
+  animation-name: floatAnimation;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(50px) translateY(50px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* bottom right */
+#circle3 {
+  position: fixed;
+  bottom: -8rem;
+  right: 4rem;
+  background-color: rgb(74, 74, 160);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(5px);
+  animation-name: floatAnimation3;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes floatAnimation3 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(50px) translateY(-50px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* bottom left */
+#circle4 {
+  position: fixed;
+  bottom: 3rem;
+  left: 15rem;
+  background-color: rgb(100, 100, 140);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: -2;
+  filter: blur(5px);
+  animation-name: floatAnimation4;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes floatAnimation4 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-50px) translateY(-50px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+#circle5 {
+  position: fixed;
+  bottom: 3rem;
+  left: 15rem;
+  background-color: rgb(61, 61, 85);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(5px);
+  animation-name: floatAnimation5;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes floatAnimation5 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-50px) translateY(50px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+#circle6 {
+  position: fixed;
+  top: 3rem;
+  left: 15rem;
+  background-color: rgb(61, 61, 85);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(5px);
+  animation-name: floatAnimation6;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes floatAnimation6 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(50px) translateY(-50px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
