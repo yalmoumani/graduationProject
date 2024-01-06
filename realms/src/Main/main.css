@@ -1,3 +1,31 @@
 body{
-  background: white;
+  background: rgb(237, 235, 235);
+}
+.main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.main img{
+  height: 500px;
+}
+.main p{
+ color: rgba(0, 0, 0, 0.616);
+ font-size: 64px;
+ font-weight: bolder;
+margin-left: 20rem;
+position: absolute;
+left: 40px;
+}
+.previews{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12rem;
+  margin-right: 12rem;
+  padding: 4rem;
+}
+.boxes{
+  background-color: aqua;
+  width: 350px;
+  height: 200px;
 }

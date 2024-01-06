@@ -43,10 +43,10 @@ export const Login = () => {
           <div className="form-check">
             <input className="form-check-input"
               type="checkbox"
-              value=""
+              value="remember"
               id=""
             />
-            <label className="form-check-label" htmlFor="">
+            <label className="form-check-label" htmlFor="RememberMe">
               Remember Me
             </label>
             </div> 

@@ -5,9 +5,8 @@
     justify-content: space-between;
     align-items: center;
     color: #333;
-    position: fixed;
+    position: static;
     bottom: 0;
-    left: 0;
     width: 100%;
     box-sizing: border-box; /* Add this line to include padding in the width calculation */
     overflow: hidden; /* Add this line to hide any content that exceeds the footer's dimensions */

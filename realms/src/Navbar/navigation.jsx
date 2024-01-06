@@ -6,16 +6,17 @@ export const Navigations = () => {
   return (
     <div className="navigation">
       <div className="logo">
-        <img src={realmsWhite} alt="" />
+        <img src={realmsWhite} alt="Realms logo written in white" />
       </div>
       <div className="items">
         <ul>
-          <a href="/"><li>Announcements</li></a>
-          <a href="/"><li>Resources</li></a>
+          <a href="/"><li>About</li></a>
+          <a href="/"><li>Events</li></a>
+          <a href="/resources"><li>Resources</li></a>
         </ul>
       </div>
       <div className="right">
-        <a href="/login"><p>Login</p></a>
+        <div className="right-login"><a href="/login"><p>Login</p></a></div>
         <div className="language">En</div>
       </div>
     </div>

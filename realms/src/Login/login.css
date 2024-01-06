@@ -9,7 +9,7 @@ body{
 }
 .logo {
   position: absolute;
-  top: 0;
+  top: -5rem;
   left: 0;
 }
 .logo img{
@@ -65,7 +65,7 @@ a{
 }
 #signin{
   color: white;
-  background-color: rgb(36, 95, 133);
+  background-color: rgb(146, 105, 204);
   border: hidden;
   padding-bottom: 3px;
   border-radius: 10px;
