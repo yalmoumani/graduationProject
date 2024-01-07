@@ -8,19 +8,19 @@ This project features four different points of authorization and different abili
 
 Installation
 -----------------------
-In order to download:
+In order to download follow the steps belows:
 
 
 For Laravel
 -
 
-$cd lms
+cd lms
 
-$composer install
+composer install
 
-$php artisan migrate
+php artisan migrate
 
-$php artisan db:seed
+php artisan db:seed
 
 For React
 -
