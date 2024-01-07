@@ -24,10 +24,10 @@ return (
         <h3>Upcoming Assignments</h3>
         <table>
             <tr>
-                <th>This Week</th>
+                <th id="week">This Week</th>
                 <th>Course</th>
                 <th>Assignment</th>
-                <th>Due Date</th>
+                <th id="date">Due Date</th>
             </tr>
             <tr>
                 <td>Sunday</td>
