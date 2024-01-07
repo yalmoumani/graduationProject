@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Exams extends Model
 {
     use HasFactory;
-    protected $fillable = ["examType", "startDate","closingDate","availableTime","courseID"
+    protected $fillable = ["examType", "startDate","closingDate","duration","courseID"
         ];
  /**
   * Get all of the comments for the Exams
