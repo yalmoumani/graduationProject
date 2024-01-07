@@ -5,6 +5,7 @@ This project is a responsive and accessible LMS system that is designed usings R
 The main features of this project present four different points of authorization and different abilities and views.
 
 Creator: Yasmeen Almoumani 
+=
 LinkedIn: https://www.linkedin.com/in/yasmeen-almoumani/ 
 
 Installation
