@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminstratorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+// Routes for adminstrator
+Route::post('/admin/createUser', [AdminstratorController::class, 'createUser']);
+Route::delete('/admin/{userId}', [AdminstratorController::class, 'deleteUser']);
+Route::put('/admin/{userId}', [AdminstratorController::class, 'editUser']);
+Route::get('/admin', [AdminstratorController::class, 'getAll']);
+
