@@ -1,5 +1,4 @@
 LMS Background
-#
 ----------------------
 This project is a responsive and accessible LMS system that is designed usings RESTful API'S, React.JS, and Laravel with a SQL database. 
 The main features of this project present four different points of authorization and different abilities and views.
@@ -10,13 +9,11 @@ The main features of this project present four different points of authorization
 
 
 Installation
-##
 -----------------------
 In order to download follow the steps belows:
 
 
 For Laravel
-###
 -
 ````
 cd lms
@@ -29,7 +26,6 @@ php artisan db:seed
 `````
 
 For React
-###
 -
 `````
 cd ..
