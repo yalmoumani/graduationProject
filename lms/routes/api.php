@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminstratorController;
+use App\Http\Controllers\CoursesController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,4 @@ Route::delete('/admin/{userId}', [AdminstratorController::class, 'deleteUser']);
 Route::put('/admin/{userId}', [AdminstratorController::class, 'editUser']);
 Route::get('/admin', [AdminstratorController::class, 'getAll']);
 
+Route::post('/courses/createCourse', [CoursesController::class, 'createCourse']);
